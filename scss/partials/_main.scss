@@ -1,0 +1,38 @@
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.832);
+    text-align: center;
+    h2 {
+        color: $color;
+        font-family: sans-serif;
+        padding: $padding;
+    }
+    p {
+        color: $color2;
+        font-family: sans-serif;
+    }
+    h3 {
+        padding: $padding;
+    }
+    ol {
+        list-style: decimal;
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            padding: $padding2;
+            margin: 0px 26px;
+            &:hover {
+                color: $color;
+                background-color: $color2;
+                border-radius: 10px;
+            }
+        }
+    }
+    
+    
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stilo CSS -->
+    <link rel="stylesheet" href="css/prueba.css">
+    <title>Aplicando SASS</title>
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <H1>Bienvenidos a SASSS</H1>
+    </header>
+    <!-- SECCION PRINCIPAL -->
+    <main>
+        <h2>Texto instructivo para Instalar SASS y crear Variables</h2>
+        <p>Recordar que es necesario instalar Node JS. Una vez hecho eso continuamos..</p>
+        <h3>Es necesario presionar la tecla "Enter" luego de realizar la acción de cada item.</h3>
+        <!-- LISTA ORDENADA -->
+        <ol>
+            <li>Abrir VSC y seguidamente la Consola (TERMINAL).</li>
+            <li>En la terminal escribir: node -v (Comprobamos version de Node).</li>
+            <li>Escribir: npm init</li>
+            <li>Presionar enter en forma "metralleta" (8veces).</li>
+            <li>Escribir: Yes</li>
+            <li>Escribir: npm install node-sass nodemon (Se nos creará el package.json).</li>
+            <li>Ingresar en "package.json".</li>
+            <li>Copiar las siguientes dos lineas de Código, dentro de "scripts": { (Presionar Enter aquí). </li>
+            <li>"build-css": "node-sass --include-path scss scss/prueba.scss css/prueba.css",
+                "watch-css": "nodemon -e scss -x \"npm run build-css\"",</li>
+            <li>En VSC crear carpeta con nombre: "SCCS"</li>
+            <li>Crear hoja con nombre "prueba.scss" (Dentro de carpeta "SCSS").</li>
+            <li>Crear carpeta "CSS"</li>
+            <li>Dentro de esta, crear hoja de stilo con nombre "prueba.css"</li>
+            <li>Pararse nuevamente en la terminal y escribir: npm run watch-css</li>
+            <li>Dentro de carpeta "SCSS" crear carpeta: "partials" </li>
+            <li>Crear hoja "_header.scss" (Dentro de carpeta "partials").</li>
+            <li>Agregar: @import "partials/header";</li>
+            <li>Usa tu imaginacion para crear variables con el symbolo "$" y haz que te codigo sea reautilizable.</li>
+        </ol>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <h4>Hecho por Germán</h4>
+        <a href="https://github.com/germankern" target="_blank">
+            <img class="iconos" src="./imagenes/github.png" alt="icono-git-hub">
+        </a>
+    </footer>
+</body>
+</html>
